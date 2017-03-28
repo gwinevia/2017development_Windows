@@ -66,7 +66,7 @@ if(isset($_POST['method']) && ($_POST['method'] === 'put')){
 <link type="text/css" rel="stylesheet" href="./main.css">
 </head>
 <body>
-<h1>Todoリスト</h1>
+<header><h1>Todoリスト</h1></header>
 <?php
 if(isset($errors)){
     print("<ul>");
@@ -78,13 +78,15 @@ if(isset($errors)){
     print("</ul>");
 }
 ?>
-<form action="todolist.php" method="post">
+<main>
+<form action="todolist.php" method="post" id="form">
 <ul>
     <li><span>タスク名</span><input type="text" name="name" value="<?php if(isset($name)){print($name);} ?>"></li>
     <li><span>メモ</span><textarea name="memo"><?php if(isset($memo)){print($memo);} ?></textarea></li>
     <li><input type="submit" name="submit"></li>
 </ul>
 </form>
+<hr>
 <?php
 $dbh = db_connect();
 
@@ -110,7 +112,7 @@ while($task = $stmt->fetch(PDO::FETCH_ASSOC)){
             <form action="todolist.php" method="post">
             <input type="hidden" name="method" value="put">
             <input type="hidden" name="id" value="' . $task['id'] . '">
-            <button type="submit">済んだ</button>
+            <button type="submit">Done</button>
             </form>
           ' ;
     print '</dd>';
@@ -120,5 +122,6 @@ while($task = $stmt->fetch(PDO::FETCH_ASSOC)){
 print('</dl>');
 
 ?>
+</main>
 </body>
 </html>
