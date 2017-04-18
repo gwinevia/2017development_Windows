@@ -1,0 +1,41 @@
+.table_training_reservation_list {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 70%;
+	height: 70%;
+}
+
+.table_training_reservation_list tr td {
+	border-collapse: collapse;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.table_training_reservation_list #table_column_botton {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.table_column_color {
+	background-color: #BAD3FF;
+	td {
+		background-color: #BAD3FF;
+	}
+}
+
+.table_column_trainingname_color {
+	background-color: #FFDBC9;
+}
+
+#table_form_submit {
+	margin-right: 10px;
+	width: 10%; 
+}
+
+#table_form_button_pageback {
+	width: 10%;
+}

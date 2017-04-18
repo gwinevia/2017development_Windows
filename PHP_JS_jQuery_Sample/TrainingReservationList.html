@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>研修予約一覧</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="table.css">
+	</head>
+	<body>
+		<header>
+			<h1>研修申込み</h1>
+		</header>
+
+		<form>
+			<table class="table_training_reservation_list">
+				<tr class="table_column_color">
+					<td>所属</td>
+					<td>社員番号</td>
+					<td>社員名</td>
+				</tr>
+				<tr>
+					<td colspan="1" rowspan="3">ビジネスシステム部</td>
+					<td colspan="2" rowspan="1" id="table_column_botton"><input type="button" value="研修受講者登録"></td>
+				</tr>
+				<tr class="table_column_color">
+					<td>社員番号</td>
+					<td>申込み者名</td>
+				</tr>
+				<tr>
+					<td>003489</td>
+					<td>研修太郎</td>
+				</tr>
+				<tr>
+					<td class="table_column_color">メールアドレス</td>
+					<td colspan="2">サンプル@isb.co.jp</td>
+				</tr>
+			</table>
+
+			<table class="table_training_reservation_list">
+				<tr>
+					<td class="table_column_color">研修名</td>
+					<td class="table_column_trainingname_color">プロジェクトマネジメント</td>
+				</tr>
+				<tr>
+					<td class="table_column_color">受講期間</td>
+					<td>2017/04/17(月)～2017/04/18(火)</td>
+				</tr>
+				<tr>
+					<td class="table_column_color">実施機関</td>
+					<td>社内</td>
+				</tr>
+			</table>
+
+			<input type="submit" value="登録" id="table_form_submit"><input type="button" value="戻る" id="table_form_button_pageback">
+		</form>
+
+		<footer>
+		</footer>
+	</body>
+</html>
